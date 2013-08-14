@@ -84,10 +84,6 @@
 						context.restore();
 						div.appendChild(canvas);
 						
-						if(i==1){
-							console.log(canvas);
-						}
-						
 						var textLayer = document.createElement('div');
 						textLayer.className = 'textLayer';
 						document.body.appendChild(textLayer);
@@ -100,7 +96,7 @@
 									for (var j = 0; j < nodes.length; j++){
 										layers.push(nodes[j].textContent + "\n");
 									}
-									console.log("H");
+									console.log("testing logging");
 									console.log(layers.join("\n").replace(/\s+/g, " "));
 								}, 1000);
 							}
